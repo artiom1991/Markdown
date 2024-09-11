@@ -51,7 +51,7 @@
 
 > Чтобы создать вложенный список, необходимо выставить 4 пробела или табуляцию в начале вложенного элемента списка.
 
-> __Пример__:
+> __Markdown__:
 > 
 > ~~~
 >   - First item
@@ -62,7 +62,7 @@
 >   - Fourth item
 > ~~~
 
-> __Результат__:
+> __Результат в Markdown__:
 > 
 >- First item
 >- Second item
@@ -75,7 +75,7 @@
 >В расширенной версии `Markdown` можно создавать списки определений, используя формат, в котором термин задается 
 > в первой строке, а его определение — в последующих строках. Для определения используется двоеточие и отступ.
 
-> __Пример__:  
+> __Markdown__:  
 > 
 >~~~
 >First Term  
@@ -86,7 +86,7 @@
 >: This is another definition of the second term.  
 >~~~
 
->__Результат__:
+>__Результат в Markdown__:
 ><dl>
 >   <dt>First Term</dt>
 >   <dd>This is the definition of the first term.</dd>
@@ -95,7 +95,7 @@
 >   <dd>This is another definition of the second term.</dd>
 ></dl>
 
-> __Аналог HTML__:
+> __HTML__:
 >~~~
 ><dl>
 >   <dt>First Term</dt>
@@ -120,24 +120,24 @@
 > `[Alt]` — текст, который отображается, если изображение не загружается, url в круглых скобках — ссылка на изображение, 
 > а второй аргумент `"Title"` — заголовок изображения.  
 
->__Пример__: `![Logo Image](images/logo.png "Site Logo")`  
+>__Markdown__: `![Logo Image](images/logo.png "Site Logo")`  
 
->__Аналог в HTML__: `<img src="images/logo.png" alt="Logo Image" title="Site Logo">`
+>__HTML__: `<img src="images/logo.png" alt="Logo Image" title="Site Logo">`
 
 
 # Код:
 > Чтобы обозначить текст как код, нужно поместить код между косых кавычек \` \`.  
 
-> __Пример__: <code>\`let isTrue = True;\`</code>.  
+> __Markdown__: <code>\`let isTrue = True;\`</code>.  
 
-> __Аналог HTML__: `<code>let isTrue = True;</code>`
+> __HTML__: `<code>let isTrue = True;</code>`
 
 # Блок кода:
 >Чтобы создать блок кода в `Markdown`, нужно использовать отступ в 4 пробела или 1 табуляцию от края документа. 
 >Если блок кода находится внутри другого элемента (например, внутри списка), нужно использовать
 >двойной отступ — 8 пробелов или 2 табуляции. 
 
-> __Пример_1__:
+> __Markdown__:
 > 
 >       <html>
 >           <head>
@@ -146,7 +146,7 @@
 
 > Также можно поместить код между специальными символами (```) или (~~~) для создания блоков кода.
 
-> __Пример_2__:
+> __Markdown__:
 > 
 > ~~~
 >/~~~
@@ -157,7 +157,7 @@
 >/~~~
 >~~~ 
 
-> __Аналог HTML__:  
+> __HTML__:  
 > 
 >       <pre>
 >           <code>
@@ -189,9 +189,9 @@
 
 > ___
 
-> __Пример__: `***`.  
+> __Markdown__: `***`.  
 
-> __Аналог HTML__: `<hr>`
+> __HTML__: `<hr>`
 
 
 # Ссылки:
@@ -199,9 +199,9 @@
 > по шаблону: `[Текст ссылки](адрес)`, где первый аргумент — это текст ссылки, а второй — адрес. Также ссылка может 
 > содержать заголовок: `[Текст ссылки](адрес "Заголовок")`.
 
-> __Пример__: `[Google](https:\\google.com)` или `[Google](https:\\google.com "Google Official Page")` 
+> __Markdown__: `[Google](https:\\google.com)` или `[Google](https:\\google.com "Google Official Page")` 
 
-> __Аналог HTML__: `<a href="https:\\google.com">Google</a>` или `<a href="https:\\google.com" title="Google Official Page">Google</a>`
+> __HTML__: `<a href="https:\\google.com">Google</a>` или `<a href="https:\\google.com" title="Google Official Page">Google</a>`
 
 # Таблицы:
 >Стандартные возможности `Markdown` не включают создание таблиц, однако большинство сервисов, таких как `GitHub`,
@@ -210,14 +210,14 @@
 >отделяет заголовок от тела таблицы. Важно сохранять структуру таблицы до конца.
 >Также внутри ячеек можно указать выравнивание текста: по левому краю — `:---`, по центру — `:---:`, или по правому краю — `---:`.
 
-> __Пример__:  
+> __Markdown__:  
 > 
 > `|     Nr    | Description |`  
 > `|-----------|-------------|`  
 > `| Header    | Title       |`  
 > `| Paragraph | Text        |`
 
-> __Аналог HTML__:  
+> __HTML__:  
 >
 >        <table>
 >           <thead>
